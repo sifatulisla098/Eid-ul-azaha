@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Typography */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ffe600;
+  animation: fadeIn 2s ease-in-out;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  animation: slideUp 2s ease-in-out;
+}
+
+/* Eid image */
+.eid-img {
+  max-width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  animation: zoomIn 3s ease-in-out;
+}
+
+/* Footer */
+footer {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #ccc;
+  animation: fadeIn 3s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
